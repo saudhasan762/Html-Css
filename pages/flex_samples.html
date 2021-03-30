@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>CodePen - Demo Flexbox 3</title>
+        <style>
+            body { padding: 2em;}
+           
+           .headerContainer {
+              display: flex;
+              flex-flow: column wrap;
+              align-content: center;
+              background: tomato;
+              font-weight: bold;
+              padding: 10px;
+           }
+
+           .footerContainer {
+              display: flex;
+              flex-flow: column wrap;
+              align-content: center;
+              background: lightgreen;
+              font-weight: bold;
+              padding: 10px;
+           }
+
+           .mainContainer {
+              display: flex;
+              flex-flow: row wrap;
+              font-weight: bold;
+              text-align: center;
+           }
+
+           .mainContentItem {
+              text-align: left;
+              background: deepskyblue;
+           }
+
+           article {
+              padding: 10px;
+              margin: 10px;
+              background: aqua;
+           }
+
+           .sideBarLeftItem { background: gold;}
+           .sideBarRightItem { background: hotpink;}
+
+           .sideBarItem { flex: 1 0 0; border: 0px solid green;}
+           .mainContentItem { flex: 3 0px;}
+           .sideBarLeftItem { order: 1;}
+           .mainContentItem { order: 2;}
+           .sideBarRightItem { order: 3;}
+        </style>
+    </head> 
+    
+    <body>
+        <header class="headerContainer"><h1>Header - Sample Flexbox Example</h1></header>
+        <div class="mainContainer">
+            <section class="mainContentItem">
+                <article>
+                    <h2>First article</h2>
+
+                    <p>Tacos actually microdosing, pour-over semoitics namjo retro fanny A paragraph is a series of related sentences developing a central idea, called the topic. Try to think about paragraphs in terms of thematic unity: a paragraph is a sentence or a group of sentences that supports one central, unified idea. Paragraphs add one idea at a time to your broader argument. </p>
+                </article>
+                <article>
+                    <h2>Second article</h2>
+
+                    <p>A comparison or a contrast paragraph zeroes in on a key similarity or difference between, for instance, two sources, positions, or ideas. Decide whether to deal only with similarities or only with differences, or to cover both. Also, keep in mind that a single comparison can be spread out over two separate paragraphs. As the following topic sentence indicates, you should make your intention clear to readers from the outset.</p>
+                </article>
+                <article>
+                    <h2>Third article</h2>
+
+                    <p>While the deliberate repetition of a key word is a useful tool, you generally want to avoid repeating an entire idea. In particular, avoid ending a paragraph by making the same point you made in the topic sentence. This type of reiteration stalls or disrupts the development of ideas as well as the logical progression to the next paragraph. Strategic use of pronouns such as it, they, and this keeps the focus on the ideas announced at the beginning of the paragraph—as long as they are clearly linked to specific nouns. In the following example the antecedent is underlined and its corresponding pronoun is in bold.</p>
+                </article>
+            </section>
+            <sideBar class="sideBarItem sideBarLeftItem"><div class="center"><p>Left Side Bar</p></div></sideBar>
+            <sideBar class="sideBarItem sideBarRightItem"><div class="center"><p>Right Side Bar</p></div></sideBar>
+        </div>
+        <footer class="footerContainer">Footer</footer>
+    </body>
+</html>

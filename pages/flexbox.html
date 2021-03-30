@@ -1,0 +1,72 @@
+<!doctype html>
+<title>Example</title>
+<style>
+  * {
+    box-sizing: border-box; 
+  }
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: row;
+    margin: 0;
+  }
+  .outer-col-1 {
+    background: #e8d4d4;
+    flex: 1;
+    font-weight: bold;
+    font-size: 25px;
+  }
+  .outer-col-2 {
+    display: flex;
+    flex-direction: column;
+    flex: 5;
+  }
+  .inner-row {
+    display: flex;
+    flex-direction: row;
+  }
+  .inner-col {
+    flex: 4;
+  }
+  .inner-row article {
+    min-height: 60vh;
+  }
+  .inner-row aside {
+    background: yellowgreen;
+    flex: 1;
+    font-size: 20px;
+  }
+  header, footer {
+    background: lawngreen;
+    height: 20vh;
+    font-weight: bold;
+    font-size: 30px;
+  }
+  header, footer, article, nav, aside {
+    padding: 2em;
+  }
+</style>
+<body>
+  <nav class="outer-col-1">
+      <h2>Nav Bar</h2>
+      <ul>
+          <li>Main Menu</li>
+          <li>New Content</li>
+          <li>Old Content</li>
+      </ul>
+    </nav>
+  <div class="outer-col-2">
+  	<header>Flex Box Header</header>
+    <div class="inner-row">
+      <div class="inner-col">
+    	<article>
+            <h2>Article</h2>
+
+            <p>Tacos actually microdosing, pour-over semoitics namjo retro fanny A paragraph is a series of related sentences developing a central idea, called the topic. Try to think about paragraphs in terms of thematic unity: a paragraph is a sentence or a group of sentences that supports one central, unified idea. Paragraphs add one idea at a time to your broader argument. </p>
+        </article>
+  		<footer>Footer</footer>
+      </div>
+    	<aside>Aside Bar</aside>
+    </div>
+  </div>
+</body>
